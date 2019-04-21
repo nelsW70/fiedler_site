@@ -1,0 +1,923 @@
+/* FONTS */
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar-custom {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+.navbar a,
+.pagination a,
+a .btn,
+.btn {
+  -webkit-transition: all 0.125s ease-in-out 0s;
+  -moz-transition: all 0.125s ease-in-out 0s;
+  -ms-transition: all 0.125s ease-in-out 0s;
+  -o-transition: all 0.125s ease-in-out 0s;
+  transition: all 0.125s ease-in-out 0s;
+}
+*/ .module-title {
+  line-height: 0.6;
+}
+
+.dropdown-menu.projects-dropdown > li > a {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.latest-news-subheader,
+.latest-news-date,
+.schedule-location,
+.schedule-time {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.latest-news-subheader {
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.latest-news-date {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.9);
+  margin-bottom: 1rem;
+}
+
+.homepage-schedule-location {
+  margin-bottom: 0;
+}
+
+.about-text {
+  color: rgba(0, 0, 0, 1);
+  font-size: 1.25rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.latest-news .about-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 1.5rem;
+}
+
+.press-quotes .font-serif,
+.projects-press .font-serif {
+  font-family: "Roboto", sans-serif;
+}
+
+.press-quotes .font-inc,
+.projects-press .font-inc {
+  font-family: "Monserrat", sans-serif;
+  font-size: smaller;
+}
+
+.projects-press {
+  color: rgba(0, 0, 0, 1);
+}
+
+.projects-press h4 {
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 1.65rem;
+}
+
+.read-more {
+  color: rgba(0, 0, 0, 0.65);
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: color 0.5s;
+}
+
+.read-more:hover {
+  color: rgba(0, 0, 0, 1);
+  transition: color 0.5s;
+}
+
+blockquote p:first-of-type {
+  margin-bottom: 0.85rem;
+}
+
+/* IMAGES */
+
+#home img {
+  width: 100vw;
+}
+
+.pages-hero {
+  height: 50vh;
+}
+
+.bridge-street {
+  border: 1px solid rgba(36, 39, 40, 0.1);
+}
+
+/* COLOR */
+
+.divider-w {
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.about-row {
+  background-color: rgba(36, 39, 40, 0.03);
+}
+
+.press-quotes {
+  background-color: rgb(36, 39, 40);
+  color: whitesmoke;
+}
+
+hr {
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+/* SPACING */
+
+.about-image {
+  padding: 0;
+}
+
+.about-content > h2 {
+  margin-bottom: 20px;
+}
+
+.about-content {
+  padding: 5% 10%;
+}
+
+.purchase-buttons > p:nth-child(-n + 3) {
+  margin-bottom: 1rem;
+}
+
+.content-box {
+  margin: 0;
+}
+
+.module-small.social-icons {
+  padding: 50px 0;
+}
+
+.project-row {
+  margin-top: 5%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.project-album,
+.press-image,
+.schedule-row {
+  margin-top: 5%;
+}
+
+.work-caption {
+  width: 0%;
+  padding: 0;
+}
+
+.projects-press blockquote:last-of-type {
+  margin-bottom: 0;
+}
+
+.hidden-lg.latest-news {
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  #latestnews {
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .project-album {
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .projects-press-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* BUTTONS */
+
+button.btn,
+button.btn-g {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.btn.btn-border-d:hover,
+.btn.btn-border-d:focus,
+.btn.btn-g:hover,
+.btn.btn-g:focus {
+  background: rgba(36, 39, 40, 0.925);
+  border: 1px solid rgba(36, 39, 40, 0.925);
+  color: whitesmoke;
+}
+
+.btn.btn-round {
+  border-radius: 0.25rem;
+}
+
+.download-button {
+  margin: 1rem 0;
+}
+
+/* ICONS  */
+
+.social-list > li {
+  font-size: 30px;
+  margin: 5px 30px 5px 0;
+}
+
+.socialpadding {
+  margin: auto;
+  width: 140px;
+  text-align: center;
+}
+
+.icon {
+  position: relative;
+  text-align: center;
+  width: 0px;
+  height: 0px;
+  padding: 20px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -khtml-border-radius: 20px 20px 20px 20px;
+  color: #ffffff;
+}
+.icon i {
+  font-size: 20px;
+  position: absolute;
+  left: 9px;
+  top: 10px;
+}
+.icon.social {
+  float: left;
+  margin: 0 5px 0 0;
+  cursor: pointer;
+  background: rgba(36, 39, 40, 0.95);
+  color: whitesmoke;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.icon.social:hover {
+  background: whitesmoke;
+  color: rgba(36, 39, 40, 0.95);
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.icon.social.fb i {
+  left: 14px;
+  top: 10px;
+}
+.icon.social.tw i {
+  left: 11px;
+}
+.icon.social.in i {
+  left: 11px;
+}
+
+/* RANDOM ELEMENTS  */
+
+.signature-hide {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+  border-radius: 6px;
+}
+
+[data-toggle~="collapse"] {
+  cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 1200px) {
+  .about-content {
+    padding: 2% 5% 0 2.5%;
+  }
+  h2 {
+    line-height: 0.75;
+  }
+}
+
+@media only screen and (min-width: 1434px) {
+  .about-content {
+    padding: 2% 16% 0 2.5%;
+  }
+}
+
+@media only screen and (min-width: 1435px) and (max-width: 2800px) {
+  .about-content {
+    padding: 2% 18% 0 2.5%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #home {
+    margin-top: 50px;
+  }
+  .about-content {
+    padding: 24px 30px;
+  }
+  .module-title {
+    margin-bottom: 30px;
+  }
+  .module-small {
+    padding-top: 24px;
+    padding-bottom: 15px;
+  }
+  .module-small.press-quotes {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+/* AUDIO PLAYER */
+
+.player-section {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.player-row {
+  margin-top: 30px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .player-section {
+    padding-left: 10px;
+    padding-right: 0;
+  }
+}
+
+.player h5,
+.player-one h5,
+.player-two h5,
+.player-three h5,
+.player-four h5,
+.player-five h5,
+.player h6,
+.player-one h6,
+.player-two h6,
+.player-three h6,
+.player-four h6,
+.player-five h6 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.player h5,
+.player-one h5,
+.player-two h5,
+.player-three h5,
+.player-four h5,
+.player-five h5 {
+  color: rgba(0, 0, 0, 0.9);
+  margin-bottom: 0.25rem;
+}
+
+.player h6,
+.player-one h6,
+.player-two h6,
+.player-three h6,
+.player-four h6,
+.player-five h6 {
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 87.5%;
+  margin-bottom: 0;
+}
+
+.player,
+.player-one,
+.player-two,
+.player-three,
+.player-four,
+.player-five {
+  position: relative;
+  width: 100%;
+  min-height: 16rem;
+  overflow: hidden;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  font-size: 100%;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+
+.projects .player,
+.projects .player-one,
+.projects .player-two,
+.projects .player-three,
+.projects .player-four,
+.projects .player-five {
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.25); */
+  padding-bottom: 2rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .projects .player,
+  .projects .player-one,
+  .projects .player-two,
+  .projects .player-three,
+  .projects .player-four,
+  .projects .player-five {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    border-top: 1px solid rgba(0, 0, 0, 0.75);
+  }
+  .player {
+    border-top: 1px solid rgba(0, 0, 0, 0.75);
+  }
+}
+
+.player .album,
+.player-one .album,
+.player-two .album,
+.player-three .album,
+.player-four .album,
+.player-five .album {
+  position: relative;
+  left: 50%;
+  top: -5rem;
+  width: 15rem;
+  height: 15rem;
+  margin-bottom: -8.5rem;
+  overflow: hidden;
+  -webkit-transform: translate(-50%, -25%);
+  transform: translate(-50%, -25%);
+  background-color: #111;
+  border: 1px solid #111;
+  border-radius: 50%;
+  box-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.5),
+    0 0 0.125rem 0.3125rem #ddd, 0 0.0625rem 0 0.375rem #bbb,
+    0 0 0.375rem 0.325rem rgba(0, 0, 0, 0.3),
+    0 0 0.5rem 0.375rem rgba(0, 0, 0, 0.3),
+    0 0.25rem 1rem 0.5rem rgba(0, 0, 0, 0.15),
+    inset 0 0 0 0.0625rem rgba(0, 0, 0, 0.5),
+    inset 0 0 0 0.1875rem rgba(255, 255, 255, 1),
+    inset 0 0 0 0.375rem rgba(0, 0, 0, 0.5),
+    inset 0 0 0 0.4375rem rgba(255, 255, 255, 0.2),
+    inset 0 0 0 0.5rem rgba(0, 0, 0, 0.5),
+    inset 0 0 0 0.5625rem rgba(255, 255, 255, 0.3),
+    inset 0 0 0 0.625rem rgba(0, 0, 0, 0.5),
+    inset 0 0 0 0.6875rem rgba(255, 255, 255, 0.2),
+    inset 0 0 0 0.75rem rgba(0, 0, 0, 0.5),
+    inset 0 0 0 0.8125rem rgba(255, 255, 255, 0.3),
+    inset 0 0 0 0.875rem rgba(0, 0, 0, 0.5),
+    inset 0 0 0 0.9375rem rgba(255, 255, 255, 0.3),
+    inset 0 0 0 1rem rgba(0, 0, 0, 0.5),
+    inset 0 0 0 1.0625rem rgba(255, 255, 255, 0.2),
+    inset 0 0 0 1.125rem rgba(0, 0, 0, 0.5),
+    inset 0 0 0 1.1875rem rgba(255, 255, 255, 0.3),
+    inset 0 0 0 1.25rem rgba(0, 0, 0, 0.5),
+    inset 0 0 0 1.3125rem rgba(255, 255, 255, 0.2),
+    inset 0 0 0 1.375rem rgba(255, 255, 255, 0.2),
+    inset 0 0 0 1.4375rem rgba(0, 0, 0, 0.5),
+    inset 0 0 0 1.5rem rgba(255, 255, 255, 0.3),
+    inset 0 0 0 1.5625rem rgba(0, 0, 0, 0.5),
+    inset 0 0 0 1.625rem rgba(255, 255, 255, 0.3),
+    inset 0 0 0 1.6875rem rgba(0, 0, 0, 0.5),
+    inset 0 0 0 1.75rem rgba(255, 255, 255, 0.2),
+    inset 0 0 0 1.8125rem rgba(0, 0, 0, 0.5),
+    inset 0 0 0 1.875rem rgba(255, 255, 255, 0.2),
+    inset 0 0 0 1.9375rem rgba(0, 0, 0, 0.5),
+    inset 0 0 0 2rem rgba(255, 255, 255, 0.3),
+    inset 0 0 0 2.0625rem rgba(0, 0, 0, 0.5),
+    inset 0 0 0 2.125rem rgba(0, 0, 0, 0.5),
+    inset 0 0 0 2.1875rem rgba(255, 255, 255, 0.1),
+    inset 0 0 0 2.25rem rgba(0, 0, 0, 0.5),
+    inset 0 0 0 2.3125rem rgba(255, 255, 255, 0.2),
+    inset 0 0 0 2.375rem rgba(255, 255, 255, 0.1),
+    inset 0 0 0 2.4375rem rgba(0, 0, 0, 0.5),
+    inset 0 0 0 2.5rem rgba(255, 255, 255, 0.3),
+    inset 0 0 0 2.5625rem rgba(0, 0, 0, 0.5),
+    inset 0 0 0 2.625rem rgba(255, 255, 255, 0.2),
+    inset 0 0 0 2.6875rem rgba(0, 0, 0, 0.5),
+    inset 0 0 0 2.75rem rgba(255, 255, 255, 0.2),
+    inset 0 0 0 2.8125rem rgba(0, 0, 0, 0.5),
+    inset 0 0 0 2.875rem rgba(255, 255, 255, 0.2),
+    inset 0 0 0 2.9375rem rgba(0, 0, 0, 0.5),
+    inset 0 0 0 3rem rgba(255, 255, 255, 0.3),
+    inset 0 0 0 3.0625rem rgba(0, 0, 0, 0.5),
+    inset 0 0 0 3.125rem rgba(0, 0, 0, 0.5),
+    inset 0 0 0 3.1875rem rgba(255, 255, 255, 0.2),
+    inset 0 0 0 3.25rem rgba(0, 0, 0, 0.5),
+    inset 0 0 0 3.3125rem rgba(255, 255, 255, 0.2),
+    inset 0 0 0 3.375rem rgba(255, 255, 255, 0.1),
+    inset 0 0 0 3.4375rem rgba(0, 0, 0, 0.5),
+    inset 0 0 0 3.5rem rgba(255, 255, 255, 0.3);
+}
+
+.player .album::after,
+.player-one .album::after,
+.player-two .album::after,
+.player-three .album::after,
+.player-four .album::after,
+.player-five .album::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.125),
+      rgba(255, 255, 255, 0) 70%
+    ),
+    linear-gradient(
+      -48deg,
+      rgba(255, 255, 255, 0) 45%,
+      rgba(255, 255, 255, 0.075),
+      rgba(255, 255, 255, 0) 55%
+    ),
+    linear-gradient(
+      -42deg,
+      rgba(255, 255, 255, 0) 45%,
+      rgba(255, 255, 255, 0.075),
+      rgba(255, 255, 255, 0) 55%
+    ),
+    radial-gradient(
+      circle at top left,
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 0) 80%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 0) 80%
+    );
+}
+
+.player .cover,
+.player-one .cover,
+.player-two .cover,
+.player-three .cover,
+.player-four .cover,
+.player-five .cover,
+.player .cover div,
+.player-one .cover div,
+.player-two .cover div,
+.player-three .cover div,
+.player-four .cover div,
+.player-five .cover div {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 6rem;
+  height: 6rem;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-transform-origin: 0% 0%;
+  -webkit-transform: rotate(0deg) translate(-50%, -50%);
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-play-state: paused;
+  /* transform-box: fill-box; */
+  /* -webkit-animation: spin 4s linear infinite paused; */
+  /* animation: spin 4s linear infinite paused; */
+  transform-origin: 0% 0%;
+  transform: rotate(0deg) translate(-50%, -50%);
+  animation-name: spin;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+
+/* .ffing .cover {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+} */
+
+.cover div {
+  border-radius: 0;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: reverse;
+  -webkit-animation-play-state: paused;
+  /* animation: spin 2s linear infinite reverse paused; */
+  /* -webkit-animation: spin 2s linear infinite paused; */
+  animation-name: spin;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-play-state: paused;
+}
+
+/* animation: spin 2s linear infinite reverse running; */
+/* .rwing .cover div {
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: reverse;
+  -webkit-animation-play-state: running;
+
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-play-state: running;
+} */
+
+.cover::before,
+.cover::after {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: inset 0 0.0625em rgba(255, 255, 255, 0.3);
+  /* transform-box: fill-box; */
+  -webkit-transform-origin: 0% 0%;
+  -webkit-transform: rotate(0deg) translate(-50%, -50%);
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: reverse;
+  -webkit-animation-play-state: paused;
+  /* animation: spin 4s linear infinite reverse paused; */
+  transform-origin: 0% 0%;
+  transform: rotate(0deg) translate(-50%, -50%);
+  animation-name: spin;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-play-state: paused;
+}
+
+.cover::after {
+  width: 0.25rem;
+  height: 0.3125rem;
+  margin-top: -0.0625rem;
+  background-color: #eee;
+  border-radius: 0.125rem;
+  box-shadow: inset 0 -0.0625rem 0.0625rem rgba(0, 0, 0, 0.5),
+    inset 0.0625rem -0.0625rem 0.125rem rgba(255, 255, 255, 0.15),
+    inset -0.0625rem -0.0625rem 0.125rem rgba(255, 255, 255, 0.15),
+    inset 0 -0.125rem 0.125rem rgba(0, 0, 0, 0.8),
+    0 0.0625rem 0.0625rem rgba(0, 0, 0, 0.5),
+    0 0.0625rem 0.25rem 0.0625rem rgba(0, 0, 0, 0.15),
+    0 0 0.25rem 0.125rem rgba(0, 0, 0, 0.15);
+}
+
+/* .ffing .cover::before,
+.ffing .cover::after {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+} */
+
+.cover img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  /* transform-box: fill-box; */
+  -webkit-transform-origin: 0% 0%;
+  -webkit-transform: rotate(0deg) translate(-50%, -50%);
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-play-state: paused;
+  /* -webkit-animation: spin 4s linear infinite paused; */
+  /* trying the version below for ios */
+  /* animation: spin 4s linear infinite paused; */
+  transform-origin: 0% 0%;
+  transform: rotate(0deg) translate(-50%, -50%);
+  animation-name: spin;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+
+.open-sesame-cover img {
+  width: 175%;
+  height: 175%;
+}
+
+.am-cover img,
+.sco-cover img {
+  width: 300%;
+  height: 300%;
+}
+
+.paused .cover img {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.playing .cover img {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+.player .info,
+.player-one .info,
+.player-two .info,
+.player-three .info,
+.player-four .info,
+.player-five .info {
+  margin-top: 0.25rem;
+  text-align: center;
+  text-shadow: 0 0.0625em rgba(255, 255, 255, 1);
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.player .time,
+.player-one .time,
+.player-two .time,
+.player-three .time,
+.player-four .time,
+.player-five .time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+
+.player .time > *,
+.player-one .time > *,
+.player-two .time > *,
+.player-three .time > *,
+.player-four .time > *,
+.player-five .time > * {
+  margin: 0 0.5rem;
+}
+
+.player .progress,
+.player-one .progress,
+.player-two .progress,
+.player-three .progress,
+.player-four .progress,
+.player-five .progress {
+  flex-grow: 2;
+  height: 0.125rem;
+  background-color: #999;
+  border-radius: 0.0625rem;
+  box-shadow: 0 0.0625rem rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+.player .progress span,
+.player-one .progress span,
+.player-two .progress span,
+.player-three .progress span,
+.player-four .progress span,
+.player-five .progress span {
+  display: block;
+  width: 0;
+  height: 100%;
+  background-color: rgb(167, 83, 81);
+}
+
+.player .actions,
+.player-one .actions,
+.player-two .actions,
+.player-three .actions,
+.player-four .actions,
+.player-five .actions {
+  position: relative;
+  width: 100%;
+  padding: 1.25rem 0 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.play-btn,
+.play-btn1,
+.play-btn2,
+.play-btn3,
+.play-btn4,
+.play-btn5 {
+  z-index: 99999;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-style: solid;
+  border-color: transparent rgba(36, 39, 40, 0.925) transparent
+    rgba(36, 39, 40, 0.925);
+  border-width: 15px 0 15px 30px;
+  border-radius: 0.25rem;
+}
+
+.play-btn.stop,
+.play-btn1.stop,
+.play-btn2.stop,
+.play-btn3.stop,
+.play-btn4.stop,
+.play-btn5.stop,
+.play-btn.to-play,
+.play-btn1.to-play,
+.play-btn2.to-play,
+.play-btn3.to-play,
+.play-btn4.to-play,
+.play-btn5.to-play {
+  /** Animate morphing */
+  transition: transform 300ms cubic-bezier(0, 0, 0.2, 1),
+    border-top-width 300ms cubic-bezier(0, 0, 0.2, 1),
+    border-bottom-width 300ms cubic-bezier(0, 0, 0.2, 1);
+}
+.play-btn.stop,
+.play-btn1.stop,
+.play-btn2.stop,
+.play-btn3.stop,
+.play-btn4.stop,
+.play-btn5.stop {
+  /** Morph to a stop button */
+  transform: rotate(90deg);
+  border-width: 0 0 0 30px;
+}
+.play-btn.to-play,
+.play-btn1.to-play,
+.play-btn2.to-play,
+.play-btn3.to-play,
+.play-btn4.to-play,
+.play-btn5.to-play {
+  /** Morph back from a stop button to a play button */
+  transform: rotate(180deg);
+  border-width: 15px 30px 15px 0;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg) translate(-50%, -50%);
+    transform: rotate(360deg) translate(-50%, -50%);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg) translate(-50%, -50%);
+    transform: rotate(360deg) translate(-50%, -50%);
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .player .info {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .player-row {
+    margin-top: 0;
+  }
+}
