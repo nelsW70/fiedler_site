@@ -1,5 +1,9 @@
 (function($) {
   let player1 = $(".player-one"),
+    player2 = $(".player-two"),
+    player3 = $(".player-three"),
+    player4 = $(".player-four"),
+    player5 = $(".player-five"),
     audio = player1.find("audio"),
     duration = $(".player-one .duration"),
     button = $(".play-btn1"),
@@ -46,7 +50,43 @@
   $("#player-button1").on("click", function() {
     let self = $(this);
 
-    if (self.hasClass("play-pause") && player1.hasClass("paused")) {
+    if (
+      self.hasClass("play-pause") &&
+      player1.hasClass("paused") &&
+      player5.hasClass("playing")
+    ) {
+      document.getElementById("player-button5").click();
+      player1.removeClass("paused").addClass("playing");
+      audio[0].play();
+      getCurrentTime();
+    } else if (
+      self.hasClass("play-pause") &&
+      player1.hasClass("paused") &&
+      player4.hasClass("playing")
+    ) {
+      document.getElementById("player-button4").click();
+      player1.removeClass("paused").addClass("playing");
+      audio[0].play();
+      getCurrentTime();
+    } else if (
+      self.hasClass("play-pause") &&
+      player1.hasClass("paused") &&
+      player3.hasClass("playing")
+    ) {
+      document.getElementById("player-button3").click();
+      player1.removeClass("paused").addClass("playing");
+      audio[0].play();
+      getCurrentTime();
+    } else if (
+      self.hasClass("play-pause") &&
+      player1.hasClass("paused") &&
+      player2.hasClass("playing")
+    ) {
+      document.getElementById("player-button2").click();
+      player1.removeClass("paused").addClass("playing");
+      audio[0].play();
+      getCurrentTime();
+    } else if (self.hasClass("play-pause") && player1.hasClass("paused")) {
       player1.removeClass("paused").addClass("playing");
       audio[0].play();
       getCurrentTime();
@@ -76,7 +116,11 @@
 })(jQuery);
 
 (function($) {
-  let player2 = $(".player-two"),
+  let player1 = $(".player-one"),
+    player2 = $(".player-two"),
+    player3 = $(".player-three"),
+    player4 = $(".player-four"),
+    player5 = $(".player-five"),
     audio = player2.find("audio"),
     duration = $(".player-two .duration"),
     button = $(".play-btn2"),
@@ -123,7 +167,43 @@
   $("#player-button2").on("click", function() {
     let self = $(this);
 
-    if (self.hasClass("play-pause") && player2.hasClass("paused")) {
+    if (
+      self.hasClass("play-pause") &&
+      player2.hasClass("paused") &&
+      player5.hasClass("playing")
+    ) {
+      document.getElementById("player-button5").click();
+      player2.removeClass("paused").addClass("playing");
+      audio[0].play();
+      getCurrentTime();
+    } else if (
+      self.hasClass("play-pause") &&
+      player2.hasClass("paused") &&
+      player4.hasClass("playing")
+    ) {
+      document.getElementById("player-button4").click();
+      player2.removeClass("paused").addClass("playing");
+      audio[0].play();
+      getCurrentTime();
+    } else if (
+      self.hasClass("play-pause") &&
+      player2.hasClass("paused") &&
+      player3.hasClass("playing")
+    ) {
+      document.getElementById("player-button3").click();
+      player2.removeClass("paused").addClass("playing");
+      audio[0].play();
+      getCurrentTime();
+    } else if (
+      self.hasClass("play-pause") &&
+      player2.hasClass("paused") &&
+      player1.hasClass("playing")
+    ) {
+      document.getElementById("player-button1").click();
+      player2.removeClass("paused").addClass("playing");
+      audio[0].play();
+      getCurrentTime();
+    } else if (self.hasClass("play-pause") && player2.hasClass("paused")) {
       player2.removeClass("paused").addClass("playing");
       audio[0].play();
       getCurrentTime();
@@ -153,7 +233,11 @@
 })(jQuery);
 
 (function($) {
-  let player3 = $(".player-three"),
+  let player1 = $(".player-one"),
+    player2 = $(".player-two"),
+    player3 = $(".player-three"),
+    player4 = $(".player-four"),
+    player5 = $(".player-five"),
     audio = player3.find("audio"),
     duration = $(".player-three .duration"),
     button = $(".play-btn3"),
@@ -200,7 +284,43 @@
   $("#player-button3").on("click", function() {
     let self = $(this);
 
-    if (self.hasClass("play-pause") && player3.hasClass("paused")) {
+    if (
+      self.hasClass("play-pause") &&
+      player3.hasClass("paused") &&
+      player5.hasClass("playing")
+    ) {
+      document.getElementById("player-button5").click();
+      player3.removeClass("paused").addClass("playing");
+      audio[0].play();
+      getCurrentTime();
+    } else if (
+      self.hasClass("play-pause") &&
+      player3.hasClass("paused") &&
+      player4.hasClass("playing")
+    ) {
+      document.getElementById("player-button4").click();
+      player3.removeClass("paused").addClass("playing");
+      audio[0].play();
+      getCurrentTime();
+    } else if (
+      self.hasClass("play-pause") &&
+      player3.hasClass("paused") &&
+      player2.hasClass("playing")
+    ) {
+      document.getElementById("player-button2").click();
+      player3.removeClass("paused").addClass("playing");
+      audio[0].play();
+      getCurrentTime();
+    } else if (
+      self.hasClass("play-pause") &&
+      player3.hasClass("paused") &&
+      player1.hasClass("playing")
+    ) {
+      document.getElementById("player-button1").click();
+      player3.removeClass("paused").addClass("playing");
+      audio[0].play();
+      getCurrentTime();
+    } else if (self.hasClass("play-pause") && player3.hasClass("paused")) {
       player3.removeClass("paused").addClass("playing");
       audio[0].play();
       getCurrentTime();
@@ -230,7 +350,11 @@
 })(jQuery);
 
 (function($) {
-  let player4 = $(".player-four"),
+  let player1 = $(".player-one"),
+    player2 = $(".player-two"),
+    player3 = $(".player-three"),
+    player4 = $(".player-four"),
+    player5 = $(".player-five"),
     audio = player4.find("audio"),
     duration = $(".player-four .duration"),
     button = $(".play-btn4"),
@@ -277,7 +401,43 @@
   $("#player-button4").on("click", function() {
     let self = $(this);
 
-    if (self.hasClass("play-pause") && player4.hasClass("paused")) {
+    if (
+      self.hasClass("play-pause") &&
+      player4.hasClass("paused") &&
+      player5.hasClass("playing")
+    ) {
+      document.getElementById("player-button5").click();
+      player4.removeClass("paused").addClass("playing");
+      audio[0].play();
+      getCurrentTime();
+    } else if (
+      self.hasClass("play-pause") &&
+      player4.hasClass("paused") &&
+      player3.hasClass("playing")
+    ) {
+      document.getElementById("player-button3").click();
+      player4.removeClass("paused").addClass("playing");
+      audio[0].play();
+      getCurrentTime();
+    } else if (
+      self.hasClass("play-pause") &&
+      player4.hasClass("paused") &&
+      player2.hasClass("playing")
+    ) {
+      document.getElementById("player-button2").click();
+      player4.removeClass("paused").addClass("playing");
+      audio[0].play();
+      getCurrentTime();
+    } else if (
+      self.hasClass("play-pause") &&
+      player4.hasClass("paused") &&
+      player1.hasClass("playing")
+    ) {
+      document.getElementById("player-button1").click();
+      player4.removeClass("paused").addClass("playing");
+      audio[0].play();
+      getCurrentTime();
+    } else if (self.hasClass("play-pause") && player4.hasClass("paused")) {
       player4.removeClass("paused").addClass("playing");
       audio[0].play();
       getCurrentTime();
@@ -307,7 +467,11 @@
 })(jQuery);
 
 (function($) {
-  let player5 = $(".player-five"),
+  let player1 = $(".player-one"),
+    player2 = $(".player-two"),
+    player3 = $(".player-three"),
+    player4 = $(".player-four"),
+    player5 = $(".player-five"),
     audio = player5.find("audio"),
     duration = $(".player-five .duration"),
     button = $(".play-btn5"),
@@ -354,7 +518,43 @@
   $("#player-button5").on("click", function() {
     let self = $(this);
 
-    if (self.hasClass("play-pause") && player5.hasClass("paused")) {
+    if (
+      self.hasClass("play-pause") &&
+      player5.hasClass("paused") &&
+      player4.hasClass("playing")
+    ) {
+      document.getElementById("player-button4").click();
+      player5.removeClass("paused").addClass("playing");
+      audio[0].play();
+      getCurrentTime();
+    } else if (
+      self.hasClass("play-pause") &&
+      player5.hasClass("paused") &&
+      player3.hasClass("playing")
+    ) {
+      document.getElementById("player-button3").click();
+      player5.removeClass("paused").addClass("playing");
+      audio[0].play();
+      getCurrentTime();
+    } else if (
+      self.hasClass("play-pause") &&
+      player5.hasClass("paused") &&
+      player2.hasClass("playing")
+    ) {
+      document.getElementById("player-button2").click();
+      player5.removeClass("paused").addClass("playing");
+      audio[0].play();
+      getCurrentTime();
+    } else if (
+      self.hasClass("play-pause") &&
+      player5.hasClass("paused") &&
+      player1.hasClass("playing")
+    ) {
+      document.getElementById("player-button1").click();
+      player5.removeClass("paused").addClass("playing");
+      audio[0].play();
+      getCurrentTime();
+    } else if (self.hasClass("play-pause") && player5.hasClass("paused")) {
       player5.removeClass("paused").addClass("playing");
       audio[0].play();
       getCurrentTime();
