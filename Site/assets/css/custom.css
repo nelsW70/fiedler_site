@@ -71,6 +71,10 @@ a .btn,
   margin-bottom: 1.5rem;
 }
 
+.about-text.group {
+  text-transform: uppercase;
+}
+
 .press-quotes .font-serif,
 .projects-press .font-serif {
   font-family: "Roboto", sans-serif;
