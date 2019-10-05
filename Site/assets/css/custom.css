@@ -2,12 +2,12 @@
 
 html,
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
 }
 
 .navbar-custom {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
 }
 
@@ -34,7 +34,7 @@ a .btn,
 .latest-news-date,
 .schedule-location,
 .schedule-time {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   font-size: 1.4rem;
   font-weight: 400;
@@ -47,7 +47,7 @@ a .btn,
 }
 
 .latest-news-date {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.1rem;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.9);
@@ -61,11 +61,11 @@ a .btn,
 .about-text {
   color: rgba(0, 0, 0, 1);
   font-size: 1.25rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .latest-news .about-text {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.3rem;
   color: rgba(0, 0, 0, 1);
   margin-bottom: 1.5rem;
@@ -77,12 +77,12 @@ a .btn,
 
 .press-quotes .font-serif,
 .projects-press .font-serif {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .press-quotes .font-inc,
 .projects-press .font-inc {
-  font-family: "Monserrat", sans-serif;
+  font-family: 'Monserrat', sans-serif;
   font-size: smaller;
 }
 
@@ -210,6 +210,10 @@ hr {
   margin-bottom: 1.5rem;
 }
 
+.news-separator {
+  margin-bottom: 7.5%;
+}
+
 @media only screen and (min-width: 768px) {
   #latestnews {
     padding-bottom: 50px;
@@ -233,7 +237,7 @@ hr {
 
 button.btn,
 button.btn-g {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 0.9rem;
 }
@@ -334,7 +338,7 @@ button.btn-g {
   border-radius: 6px;
 }
 
-[data-toggle~="collapse"] {
+[data-toggle~='collapse'] {
   cursor: pointer;
 }
 
@@ -411,7 +415,7 @@ button.btn-g {
 .player-three h6,
 .player-four h6,
 .player-five h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   margin-top: 0;
 }
@@ -450,7 +454,7 @@ button.btn-g {
   border-top: 1px solid rgba(0, 0, 0, 0.25);
   font-size: 100%;
   font-weight: 300;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .projects .player,
@@ -560,7 +564,7 @@ button.btn-g {
 .player-three .album::after,
 .player-four .album::after,
 .player-five .album::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -628,7 +632,7 @@ button.btn-g {
 
 .cover::before,
 .cover::after {
-  content: "";
+  content: '';
   position: absolute;
   z-index: 10;
   top: 0;
