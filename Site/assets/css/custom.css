@@ -125,10 +125,6 @@ blockquote p:first-of-type {
   border: 1px solid rgba(36, 39, 40, 0.1);
 }
 
-.news-thumbnail-grayscale {
-  filter: grayscale(1);
-}
-
 /* COLOR */
 
 .divider-w {
