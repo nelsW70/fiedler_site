@@ -1,29 +1,55 @@
-$(function() {
+$(function () {
   /**
    * Store the transition end event names for convenience.
    */
   var transitionEnd =
-    "transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd";
+    'transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd';
 
   /**
    * Trigger the play button states upon clicking.
    */
-  $(".play-btn").click(function(e) {
+  $('.play-btn1').click(function (e) {
     e.preventDefault();
 
-    if ($(this).hasClass("stop")) {
-      $(this)
-        .removeClass("stop")
-        .addClass("to-play");
-    } else if (!$(this).hasClass("to-play")) {
-      $(this).addClass("stop");
+    if ($(this).hasClass('stop')) {
+      $(this).removeClass('stop').addClass('to-play');
+    } else if (!$(this).hasClass('to-play')) {
+      $(this).addClass('stop');
     }
   });
 
   /**
    * Remove the 'to-play' class upon transition end.
    */
-  $(document).on(transitionEnd, ".to-play", function() {
-    $(this).removeClass("to-play");
+  $(document).on(transitionEnd, '.to-play', function () {
+    $(this).removeClass('to-play');
+  });
+});
+
+$(function () {
+  /**
+   * Store the transition end event names for convenience.
+   */
+  var transitionEnd =
+    'transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd';
+
+  /**
+   * Trigger the play button states upon clicking.
+   */
+  $('.play-btn2').click(function (e) {
+    e.preventDefault();
+
+    if ($(this).hasClass('stop')) {
+      $(this).removeClass('stop').addClass('to-play');
+    } else if (!$(this).hasClass('to-play')) {
+      $(this).addClass('stop');
+    }
+  });
+
+  /**
+   * Remove the 'to-play' class upon transition end.
+   */
+  $(document).on(transitionEnd, '.to-play', function () {
+    $(this).removeClass('to-play');
   });
 });
