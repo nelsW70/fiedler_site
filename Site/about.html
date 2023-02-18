@@ -89,6 +89,7 @@
                 >Projects</a
               >
               <ul class="dropdown-menu projects-dropdown">
+                <li><a href="solo.html">Solo</a></li>
                 <li><a href="opensesame.html">Open Sesame</a></li>
                 <li><a href="trio.html">Trio</a></li>
                 <li><a href="bigsackbut.html">Big Sackbut</a></li>
@@ -217,7 +218,8 @@
           <div class="row">
             <div class="col-sm-12 text-center">
               <p class="copyright font-inc m-b-0">
-                ©<script>
+                ©
+                <script>
                   document.write(new Date().getFullYear());
                 </script>
                 <a href="index.html">Joe Fiedler</a>, All Rights Reserved.
@@ -252,18 +254,18 @@
     <script src="assets/js/custom.js"></script>
     <script>
       jQuery(document).ready(
-        (function($) {
+        (function ($) {
           function scrollToSection(event) {
             event.preventDefault();
-            var $section = $($(this).attr("href"));
-            $("html, body").animate(
+            var $section = $($(this).attr('href'));
+            $('html, body').animate(
               {
-                scrollTop: $section.offset().top - 50
+                scrollTop: $section.offset().top - 50,
               },
               1250
             );
           }
-          $("[data-scroll]").on("click", scrollToSection);
+          $('[data-scroll]').on('click', scrollToSection);
         })(jQuery)
       );
     </script>
