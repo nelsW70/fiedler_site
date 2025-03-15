@@ -4,6 +4,7 @@
     player3 = $('.player-three'),
     player4 = $('.player-four'),
     player5 = $('.player-five'),
+    player6 = $('.player-six'),
     audio = player1.find('audio'),
     duration = $('.player-one .duration'),
     button = $('.play-btn1'),
@@ -51,6 +52,15 @@
     let self = $(this);
 
     if (
+      self.hasClass('play-pause') &&
+      player1.hasClass('paused') &&
+      player6.hasClass('playing')
+    ) {
+      document.getElementById('player-button6').click();
+      player1.removeClass('paused').addClass('playing');
+      audio[0].play();
+      getCurrentTime();
+    } else if (
       self.hasClass('play-pause') &&
       player1.hasClass('paused') &&
       player5.hasClass('playing')
@@ -121,6 +131,7 @@
     player3 = $('.player-three'),
     player4 = $('.player-four'),
     player5 = $('.player-five'),
+    player6 = $('.player-six'),
     audio = player2.find('audio'),
     duration = $('.player-two .duration'),
     button = $('.play-btn2'),
@@ -166,8 +177,16 @@
 
   $('#player-button2').on('click', function () {
     let self = $(this);
-
     if (
+      self.hasClass('play-pause') &&
+      player2.hasClass('paused') &&
+      player6.hasClass('playing')
+    ) {
+      document.getElementById('player-button6').click();
+      player2.removeClass('paused').addClass('playing');
+      audio[0].play();
+      getCurrentTime();
+    } else if (
       self.hasClass('play-pause') &&
       player2.hasClass('paused') &&
       player5.hasClass('playing')
@@ -238,6 +257,7 @@
     player3 = $('.player-three'),
     player4 = $('.player-four'),
     player5 = $('.player-five'),
+    player6 = $('.player-six'),
     audio = player3.find('audio'),
     duration = $('.player-three .duration'),
     button = $('.play-btn3'),
@@ -285,6 +305,15 @@
     let self = $(this);
 
     if (
+      self.hasClass('play-pause') &&
+      player3.hasClass('paused') &&
+      player6.hasClass('playing')
+    ) {
+      document.getElementById('player-button6').click();
+      player3.removeClass('paused').addClass('playing');
+      audio[0].play();
+      getCurrentTime();
+    } else if (
       self.hasClass('play-pause') &&
       player3.hasClass('paused') &&
       player5.hasClass('playing')
@@ -355,6 +384,7 @@
     player3 = $('.player-three'),
     player4 = $('.player-four'),
     player5 = $('.player-five'),
+    player6 = $('.player-six'),
     audio = player4.find('audio'),
     duration = $('.player-four .duration'),
     button = $('.play-btn4'),
@@ -402,6 +432,15 @@
     let self = $(this);
 
     if (
+      self.hasClass('play-pause') &&
+      player4.hasClass('paused') &&
+      player6.hasClass('playing')
+    ) {
+      document.getElementById('player-button6').click();
+      player4.removeClass('paused').addClass('playing');
+      audio[0].play();
+      getCurrentTime();
+    } else if (
       self.hasClass('play-pause') &&
       player4.hasClass('paused') &&
       player5.hasClass('playing')
@@ -472,6 +511,7 @@
     player3 = $('.player-three'),
     player4 = $('.player-four'),
     player5 = $('.player-five'),
+    player6 = $('.player-six'),
     audio = player5.find('audio'),
     duration = $('.player-five .duration'),
     button = $('.play-btn5'),
@@ -519,6 +559,15 @@
     let self = $(this);
 
     if (
+      self.hasClass('play-pause') &&
+      player5.hasClass('paused') &&
+      player6.hasClass('playing')
+    ) {
+      document.getElementById('player-button6').click();
+      player5.removeClass('paused').addClass('playing');
+      audio[0].play();
+      getCurrentTime();
+    } else if (
       self.hasClass('play-pause') &&
       player5.hasClass('paused') &&
       player4.hasClass('playing')
