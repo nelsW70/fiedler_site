@@ -413,12 +413,14 @@ button.btn-g {
 .player-three h5,
 .player-four h5,
 .player-five h5,
+.player-six h5,
 .player h6,
 .player-one h6,
 .player-two h6,
 .player-three h6,
 .player-four h6,
-.player-five h6 {
+.player-five h6,
+.player-six h6 {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   margin-top: 0;
@@ -429,7 +431,8 @@ button.btn-g {
 .player-two h5,
 .player-three h5,
 .player-four h5,
-.player-five h5 {
+.player-five h5,
+.player-six h5 {
   color: rgba(0, 0, 0, 0.9);
   margin-bottom: 0.25rem;
 }
@@ -439,7 +442,8 @@ button.btn-g {
 .player-two h6,
 .player-three h6,
 .player-four h6,
-.player-five h6 {
+.player-five h6,
+.player-six h6 {
   color: rgba(0, 0, 0, 0.75);
   font-size: 87.5%;
   margin-bottom: 0;
@@ -450,7 +454,8 @@ button.btn-g {
 .player-two,
 .player-three,
 .player-four,
-.player-five {
+.player-five,
+.player-six {
   position: relative;
   width: 100%;
   min-height: 16rem;
@@ -466,7 +471,8 @@ button.btn-g {
 .projects .player-two,
 .projects .player-three,
 .projects .player-four,
-.projects .player-five {
+.projects .player-five,
+.projects .player-six {
   padding-bottom: 2rem;
 }
 
@@ -476,7 +482,8 @@ button.btn-g {
   .projects .player-two,
   .projects .player-three,
   .projects .player-four,
-  .projects .player-five {
+  .projects .player-five,
+  .projects .player-six {
     border-bottom: 1px solid rgba(0, 0, 0, 0.25);
     border-top: 1px solid rgba(0, 0, 0, 0.75);
   }
@@ -490,7 +497,8 @@ button.btn-g {
 .player-two .album,
 .player-three .album,
 .player-four .album,
-.player-five .album {
+.player-five .album,
+.player-six .album {
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -567,7 +575,8 @@ button.btn-g {
 .player-two .album::after,
 .player-three .album::after,
 .player-four .album::after,
-.player-five .album::after {
+.player-five .album::after,
+.player-six .album::after {
   content: '';
   position: absolute;
   top: 0;
@@ -609,7 +618,8 @@ button.btn-g {
 .player-two .cover,
 .player-three .cover,
 .player-four .cover,
-.player-five .cover {
+.player-five .cover,
+.player-six .cover {
   position: absolute;
   z-index: 1;
   top: 4.5rem;
@@ -624,7 +634,8 @@ button.btn-g {
 .player-two .cover div,
 .player-three .cover div,
 .player-four .cover div,
-.player-five .cover div {
+.player-five .cover div,
+.player-six .cover div {
   position: absolute;
   z-index: 1;
   top: 0;
@@ -691,7 +702,8 @@ button.btn-g {
 .player-two .info,
 .player-three .info,
 .player-four .info,
-.player-five .info {
+.player-five .info,
+.player-six .info {
   margin-top: 0.25rem;
   text-align: center;
   text-shadow: 0 0.0625em rgba(255, 255, 255, 1);
@@ -705,7 +717,8 @@ button.btn-g {
 .player-two .time,
 .player-three .time,
 .player-four .time,
-.player-five .time {
+.player-five .time,
+.player-six .time {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -717,7 +730,8 @@ button.btn-g {
 .player-two .time > *,
 .player-three .time > *,
 .player-four .time > *,
-.player-five .time > * {
+.player-five .time > *,
+.player-six .time > * {
   margin: 0 0.5rem;
 }
 
@@ -726,7 +740,8 @@ button.btn-g {
 .player-two .progress,
 .player-three .progress,
 .player-four .progress,
-.player-five .progress {
+.player-five .progress,
+.player-six .progress {
   flex-grow: 2;
   height: 0.125rem;
   background-color: #999;
@@ -740,7 +755,8 @@ button.btn-g {
 .player-two .progress span,
 .player-three .progress span,
 .player-four .progress span,
-.player-five .progress span {
+.player-five .progress span,
+.player-six .progress span {
   display: block;
   width: 0;
   height: 100%;
@@ -752,7 +768,8 @@ button.btn-g {
 .player-two .actions,
 .player-three .actions,
 .player-four .actions,
-.player-five .actions {
+.player-five .actions,
+.player-six .actions {
   position: relative;
   width: 100%;
   padding: 1.25rem 0 0.5rem 0;
@@ -772,7 +789,8 @@ button.btn-g {
 .play-btn2,
 .play-btn3,
 .play-btn4,
-.play-btn5 {
+.play-btn5,
+.play-btn6 {
   z-index: 99999;
   cursor: pointer;
   width: 30px;
@@ -790,12 +808,14 @@ button.btn-g {
 .play-btn3.stop,
 .play-btn4.stop,
 .play-btn5.stop,
+.play-btn6.stop,
 .play-btn.to-play,
 .play-btn1.to-play,
 .play-btn2.to-play,
 .play-btn3.to-play,
 .play-btn4.to-play,
-.play-btn5.to-play {
+.play-btn5.to-play,
+.play-btn6.to-play {
   /** Animate morphing */
   transition: transform 300ms cubic-bezier(0, 0, 0.2, 1),
     border-top-width 300ms cubic-bezier(0, 0, 0.2, 1),
@@ -806,7 +826,8 @@ button.btn-g {
 .play-btn2.stop,
 .play-btn3.stop,
 .play-btn4.stop,
-.play-btn5.stop {
+.play-btn5.stop,
+.play-btn6.stop {
   /** Morph to a stop button */
   transform: rotate(90deg);
   border-width: 0 0 0 30px;
@@ -816,7 +837,8 @@ button.btn-g {
 .play-btn2.to-play,
 .play-btn3.to-play,
 .play-btn4.to-play,
-.play-btn5.to-play {
+.play-btn5.to-play,
+.play-btn6.to-play {
   /** Morph back from a stop button to a play button */
   transform: rotate(180deg);
   border-width: 15px 30px 15px 0;
