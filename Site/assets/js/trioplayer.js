@@ -631,3 +631,130 @@
     }
   });
 })(jQuery);
+
+(function ($) {
+  let player1 = $('.player-one'),
+    player2 = $('.player-two'),
+    player3 = $('.player-three'),
+    player4 = $('.player-four'),
+    player5 = $('.player-five'),
+    player6 = $('.player-six'),
+    audio = player6.find('audio'),
+    duration = $('.player-six .duration'),
+    button = $('.play-btn6'),
+    currentTime = $('.player-six .current-time'),
+    progressBar = $('.player-six .progress span'),
+    mouseDown = false,
+    rewind,
+    showCurrentTime;
+
+  function secsToMins(time) {
+    let int = Math.floor(time),
+      mins = Math.floor(int / 60),
+      secs = int % 60,
+      newTime = mins + ':' + ('0' + secs).slice(-2);
+
+    return newTime;
+  }
+
+  function getCurrentTime() {
+    let currentTimeFormatted = secsToMins(audio[0].currentTime),
+      currentTimePercentage = (audio[0].currentTime / audio[0].duration) * 100;
+
+    currentTime.text(currentTimeFormatted);
+    progressBar.css('width', currentTimePercentage + '%');
+
+    if (player6.hasClass('playing')) {
+      showCurrentTime = requestAnimationFrame(getCurrentTime);
+    } else {
+      cancelAnimationFrame(showCurrentTime);
+    }
+  }
+
+  audio
+    .on('loadedmetadata', function () {
+      let durationFormatted = secsToMins(audio[0].duration);
+      duration.text(durationFormatted);
+    })
+    .on('ended', function () {
+      player6.removeClass('playing').addClass('paused');
+      button.removeClass('stop').addClass('to-play');
+      audio[0].currentTime = 0;
+    });
+
+  $('#player-button6').on('click', function () {
+    let self = $(this);
+
+    if (
+      self.hasClass('play-pause') &&
+      player6.hasClass('paused') &&
+      player5.hasClass('playing')
+    ) {
+      document.getElementById('player-button5').click();
+      player6.removeClass('paused').addClass('playing');
+      audio[0].play();
+      getCurrentTime();
+    } else if (
+      self.hasClass('play-pause') &&
+      player6.hasClass('paused') &&
+      player4.hasClass('playing')
+    ) {
+      document.getElementById('player-button4').click();
+      player6.removeClass('paused').addClass('playing');
+      audio[0].play();
+      getCurrentTime();
+    } else if (
+      self.hasClass('play-pause') &&
+      player6.hasClass('paused') &&
+      player3.hasClass('playing')
+    ) {
+      document.getElementById('player-button3').click();
+      player6.removeClass('paused').addClass('playing');
+      audio[0].play();
+      getCurrentTime();
+    } else if (
+      self.hasClass('play-pause') &&
+      player6.hasClass('paused') &&
+      player2.hasClass('playing')
+    ) {
+      document.getElementById('player-button2').click();
+      player6.removeClass('paused').addClass('playing');
+      audio[0].play();
+      getCurrentTime();
+    } else if (
+      self.hasClass('play-pause') &&
+      player6.hasClass('paused') &&
+      player1.hasClass('playing')
+    ) {
+      document.getElementById('player-button1').click();
+      player6.removeClass('paused').addClass('playing');
+      audio[0].play();
+      getCurrentTime();
+    } else if (self.hasClass('play-pause') && player6.hasClass('paused')) {
+      player6.removeClass('paused').addClass('playing');
+      audio[0].play();
+      getCurrentTime();
+    } else if (self.hasClass('play-pause') && player6.hasClass('playing')) {
+      player6.removeClass('playing').addClass('paused');
+      audio[0].pause();
+    }
+  });
+
+  player6.on('mousedown mouseup', function () {
+    mouseDown = !mouseDown;
+  });
+
+  progressBar.parent().on('click mousemove', function (e) {
+    let self = $(this),
+      totalWidth = self.width(),
+      offsetX = e.offsetX,
+      offsetPercentage = offsetX / totalWidth;
+
+    if (mouseDown || e.type === 'click') {
+      audio[0].currentTime = audio[0].duration * offsetPercentage;
+      if (player6.hasClass('paused')) {
+        progressBar.css('width', offsetPercentage * 100 + '%');
+      }
+    }
+  });
+})(jQuery);
