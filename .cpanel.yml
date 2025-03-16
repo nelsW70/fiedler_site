@@ -3,4 +3,3 @@ deployment:
   tasks:
     - export DEPLOYPATH=~/public_html
     - /bin/cp -rT ./Site $DEPLOYPATH
-# why
