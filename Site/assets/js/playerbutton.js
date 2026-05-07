@@ -28,6 +28,7 @@ $(function () {
   initPlayButton('.play-btn3');
   initPlayButton('.play-btn4');
   initPlayButton('.play-btn5');
+  initPlayButton('.play-btn6');
 
   /**
    * Remove the 'to-play' class upon transition end.
