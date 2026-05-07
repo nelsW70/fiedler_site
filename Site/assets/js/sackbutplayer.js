@@ -35,6 +35,13 @@
       btnClass: 'play-btn5',
       otherPlayers: [4, 3, 2, 1],
     },
+    {
+      class: 'player-six',
+      selector: '.player-six',
+      buttonId: 'player-button6',
+      btnClass: 'play-btn6',
+      otherPlayers: [5, 4, 3, 2, 1],
+    },
   ];
 
   function secsToMins(time) {
