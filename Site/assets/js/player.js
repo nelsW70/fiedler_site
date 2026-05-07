@@ -5,35 +5,35 @@
       selector: '.player-one',
       buttonId: 'player-button1',
       btnClass: 'play-btn1',
-      otherPlayers: [5, 4, 3, 2],
+      otherPlayers: [6, 5, 4, 3, 2],
     },
     {
       class: 'player-two',
       selector: '.player-two',
       buttonId: 'player-button2',
       btnClass: 'play-btn2',
-      otherPlayers: [5, 4, 3, 1],
+      otherPlayers: [6, 5, 4, 3, 1],
     },
     {
       class: 'player-three',
       selector: '.player-three',
       buttonId: 'player-button3',
       btnClass: 'play-btn3',
-      otherPlayers: [5, 4, 2, 1],
+      otherPlayers: [6, 5, 4, 2, 1],
     },
     {
       class: 'player-four',
       selector: '.player-four',
       buttonId: 'player-button4',
       btnClass: 'play-btn4',
-      otherPlayers: [5, 3, 2, 1],
+      otherPlayers: [6, 5, 3, 2, 1],
     },
     {
       class: 'player-five',
       selector: '.player-five',
       buttonId: 'player-button5',
       btnClass: 'play-btn5',
-      otherPlayers: [4, 3, 2, 1],
+      otherPlayers: [6, 4, 3, 2, 1],
     },
     {
       class: 'player-six',
@@ -96,7 +96,7 @@
         let playingPlayer = null;
         for (let playerNum of config.otherPlayers) {
           let otherPlayer = $(
-            `.player-${['one', 'two', 'three', 'four', 'five'][playerNum - 1]}`,
+            `.player-${['one', 'two', 'three', 'four', 'five', 'six'][playerNum - 1]}`,
           );
           if (otherPlayer.hasClass('playing')) {
             playingPlayer = playerNum;
